@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="day5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Illustration" translatesAutoresizingMaskIntoConstraints="NO" id="e0V-FL-SpK">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="318.66666666666669"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Sithu Win" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkM-Te-8o7">
+                                <rect key="frame" x="393" y="-36.666666666666657" width="116" height="20.999999999999993"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42e-F2-geb">
+                                <rect key="frame" x="471" y="7.3333333333333428" width="331" height="385.66666666666663"/>
+                                <mutableString key="text">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HkM-Te-8o7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="1G5-x8-Gbt"/>
+                            <constraint firstItem="HkM-Te-8o7" firstAttribute="top" secondItem="e0V-FL-SpK" secondAttribute="bottom" constant="30" id="45T-Fq-qQa"/>
+                            <constraint firstItem="42e-F2-geb" firstAttribute="leading" secondItem="HkM-Te-8o7" secondAttribute="leading" id="A9e-Yv-g4e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HkM-Te-8o7" secondAttribute="trailing" constant="31" id="CBu-uz-TQ4"/>
+                            <constraint firstItem="e0V-FL-SpK" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="Gb4-0T-60h"/>
+                            <constraint firstAttribute="bottom" secondItem="42e-F2-geb" secondAttribute="bottom" constant="10" id="HKu-d4-uZf"/>
+                            <constraint firstItem="e0V-FL-SpK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.461268" id="XmJ-sd-fkg"/>
+                            <constraint firstAttribute="trailing" secondItem="42e-F2-geb" secondAttribute="trailing" constant="50" id="a4I-pg-jn0"/>
+                            <constraint firstItem="42e-F2-geb" firstAttribute="top" secondItem="HkM-Te-8o7" secondAttribute="bottom" constant="23" id="clX-n6-WKx"/>
+                            <constraint firstItem="42e-F2-geb" firstAttribute="leading" secondItem="e0V-FL-SpK" secondAttribute="trailing" constant="78" id="heE-6y-Wpd"/>
+                            <constraint firstAttribute="bottom" secondItem="42e-F2-geb" secondAttribute="bottom" id="mow-Q6-nB2"/>
+                            <constraint firstItem="e0V-FL-SpK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="opU-p5-Ice"/>
+                            <constraint firstItem="42e-F2-geb" firstAttribute="top" secondItem="HkM-Te-8o7" secondAttribute="bottom" constant="30" id="qCg-65-FpK"/>
+                            <constraint firstItem="e0V-FL-SpK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qy6-lU-SeN"/>
+                            <constraint firstItem="e0V-FL-SpK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rsM-dC-wke"/>
+                            <constraint firstItem="e0V-FL-SpK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tQd-jC-bpI"/>
+                            <constraint firstItem="HkM-Te-8o7" firstAttribute="leading" secondItem="e0V-FL-SpK" secondAttribute="trailing" id="vCn-3g-jvI"/>
+                            <constraint firstItem="e0V-FL-SpK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wnn-Hw-kK4"/>
+                            <constraint firstItem="42e-F2-geb" firstAttribute="trailing" secondItem="HkM-Te-8o7" secondAttribute="trailing" id="xqd-yE-hKq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="opU-p5-Ice"/>
+                                <exclude reference="Gb4-0T-60h"/>
+                                <exclude reference="rsM-dC-wke"/>
+                                <exclude reference="wnn-Hw-kK4"/>
+                                <exclude reference="CBu-uz-TQ4"/>
+                                <exclude reference="1G5-x8-Gbt"/>
+                                <exclude reference="45T-Fq-qQa"/>
+                                <exclude reference="xqd-yE-hKq"/>
+                                <exclude reference="A9e-Yv-g4e"/>
+                                <exclude reference="qCg-65-FpK"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="opU-p5-Ice"/>
+                                <include reference="Gb4-0T-60h"/>
+                                <include reference="rsM-dC-wke"/>
+                                <include reference="wnn-Hw-kK4"/>
+                                <include reference="CBu-uz-TQ4"/>
+                                <include reference="1G5-x8-Gbt"/>
+                                <include reference="45T-Fq-qQa"/>
+                                <include reference="xqd-yE-hKq"/>
+                                <include reference="A9e-Yv-g4e"/>
+                                <include reference="qCg-65-FpK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="273" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Illustration" width="319" height="319"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
