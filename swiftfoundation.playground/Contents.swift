@@ -58,3 +58,6 @@ World
 
 
 print(messageOne)
+
+let halfOpenRange = 0..<5
+
