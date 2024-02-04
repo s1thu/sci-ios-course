@@ -61,3 +61,31 @@ print(messageOne)
 
 let halfOpenRange = 0..<5
 
+for i in 1...5{
+    for j in 1...i{
+        print("* ",terminator: "")
+    }
+    print()
+}
+
+for i in stride(from: 5, through: 1, by: -1){
+//    for j in stride(from: i, through: 1, by: -1){
+//        print("* ",terminator: "")
+//    }
+    for j in 1...i{
+        print("* ",terminator: "")
+    }
+    print()
+}
+
+let testStr = "rotator"
+var reversedStr = ""
+
+for ch in testStr{
+    reversedStr = "\(ch)" + reversedStr
+}
+
+print(reversedStr)
+if(testStr == reversedStr){
+    "\(testStr) is palindrone"
+}
