@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "HD-wallpaper-solo-leveling-cha-couple-romance-sing-jin-woo.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "HD-wallpaper-solo-leveling-cha-couple-romance-sing-jin-woo 1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "HD-wallpaper-solo-leveling-cha-couple-romance-sing-jin-woo 2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
