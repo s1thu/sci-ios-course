@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 for i in 1...100{
     
     if(i%3 == 0 && i%5 == 0){
@@ -23,6 +24,24 @@ for i in 1...100{
         continue
     }
     
+}
+
+for i in 1...10{
+    var ivalue = i
+    for j in 1...10{
+        if(i == 1 || i == 10){
+            print("* ",terminator: "")
+        }else
+        {
+            if(j == 1 || j == 10){
+                print("* ",terminator: "")
+            }else{
+                print(" ",terminator: " ")
+            }
+                
+        }
+    }
+    print()
 }
 
 
