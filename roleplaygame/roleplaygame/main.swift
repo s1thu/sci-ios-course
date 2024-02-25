@@ -7,5 +7,7 @@
 
 import Foundation
 
-print("Hello, World!")
+print("""
+Hello Welcome from Adventure game
+""")
 
