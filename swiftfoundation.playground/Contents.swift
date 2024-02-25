@@ -312,3 +312,72 @@ extension Int{
 
 print(isPrime(number: 3))
 print(4.isPrime)
+
+// Collection: ARRAY
+
+var intArr:[Int] = []
+var intArr2 = [Int]()
+var intArr3 = [1,2,3,4,5]
+
+//access
+print(intArr3[0])
+
+intArr3.shuffle()
+print(intArr3)
+
+for x in intArr3.enumerated(){
+    print(x)
+}
+
+for i in 1...10{
+    intArr2.append(Int.random(in: 1...10))
+}
+
+print(intArr2)
+
+//
+extension Array where Element == Int{
+    
+    var isPrime:[Int]{
+        var temp:[Int] = []
+        for i in self{
+            if i.isPrime{
+                temp.append(self[i])
+            }
+        }
+        return temp
+    }
+}
+
+print(intArr2.isPrime)
+
+
+let numbers:Set = [1,2,4,5,6]
+print(numbers)
+
+let setA:Set = [1,2,3]
+let setB:Set = [4,5,6]
+print(setA.union(setB))
+
+var citiDict:[String:String] = ["England":"London","France":"Paris"]
+print(citiDict)
+
+for key in citiDict.keys{
+    print(key)
+}
+
+// Dictionary is not Updating the Value, overwrite the Value
+citiDict["Myanmar"] = "Yangon"
+print(citiDict)
+citiDict["Myanmar"] = "NPT"
+print(citiDict)
+
+for (key,value) in citiDict{
+    print("\(key) \(value)")
+}
+
+// TUPLE memory performance thet thr
+let product = ("Product A",123)
+print(product.0)
+print(product.1)
+
