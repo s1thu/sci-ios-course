@@ -62,22 +62,23 @@ print(messageOne)
 
 let halfOpenRange = 0..<5
 
-for i in 1...5{
-    for j in 1...i{
-        print("* ",terminator: "")
-    }
-    print()
-}
-
-for i in stride(from: 5, through: 1, by: -1){
-//    for j in stride(from: i, through: 1, by: -1){
+//for i in 1...5{
+//    for j in 1...i{
+//        print("* ",terminator: "")
+//
+//    }
+//    print()
+//}
+//
+//for i in stride(from: 5, through: 1, by: -1){
+////    for j in stride(from: i, through: 1, by: -1){
+////        print("* ",terminator: "")
+////    }
+//    for j in 1...i{
 //        print("* ",terminator: "")
 //    }
-    for j in 1...i{
-        print("* ",terminator: "")
-    }
-    print()
-}
+//    print()
+//}
 
 let testStr = "rotator"
 var reversedStr = ""
@@ -242,3 +243,72 @@ extension Int{
 
 print(10.factorial())
 print(1.factorial())
+
+//stored properties
+extension Double{
+    static var pi2:Double{
+        return 3.142
+    }
+}
+
+print(Double.pi2)
+
+extension Int{
+    
+    func isLeapYear() -> Bool{
+        (self % 4 == 0 && self % 100 != 0 ) || self % 400 == 0
+    }
+}
+
+print(2000.isLeapYear())
+
+func isDivisible(number:Int,divisor:Int) -> Bool {
+     number % divisor == 0
+}
+
+print(isDivisible(number: 1, divisor: 1))
+
+func isPrime(number:Int) -> Bool{
+    if number <= 1 {
+        return false
+    }
+    
+    if number <= 3{
+        return true
+    }
+    
+    var i = 2
+    
+    while i * i <= number{
+        if number % i == 0{
+            return false
+        }
+        i += 1
+    }
+    return true
+}
+
+extension Int{
+    var isPrime:Bool{
+        if self <= 1 {
+            return false
+        }
+        
+        if self <= 3{
+            return true
+        }
+        
+        var i = 2
+        
+        while i * i <= self{
+            if self % i == 0{
+                return false
+            }
+            i += 1
+        }
+        return true
+    }
+}
+
+print(isPrime(number: 3))
+print(4.isPrime)
