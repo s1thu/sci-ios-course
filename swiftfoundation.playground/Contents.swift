@@ -381,3 +381,32 @@ let product = ("Product A",123)
 print(product.0)
 print(product.1)
 
+func findMedian(arrOne:[Int]) -> Double?{
+    let arrCount = arrOne.count
+    var medianValues = [Int]()
+    var median = 0
+    
+    if arrCount % 2 == 0 {
+        medianValues.append(Int(arrCount/2))
+        medianValues.append(Int(arrCount/2) + 1)
+        
+    }else{
+        medianValues.append(Int(arrCount/2)+1)
+    }
+    
+    for val in medianValues{
+        median += val
+    }
+    
+    return Double(median)/Double(2)
+}
+
+let resultArr = findMedian(arrOne: [])
+print(resultArr)
+
+//extension Array where Element == Int{
+//    var median:[Int]{
+//        self.con
+//    }
+//        
+//}
