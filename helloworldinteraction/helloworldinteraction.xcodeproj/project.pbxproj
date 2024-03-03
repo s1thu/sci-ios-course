@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FFA2D9912B94ADAB000D2AE7 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA2D9902B94ADAB000D2AE7 /* Authentication.storyboard */; };
+		FFA2D9932B94ADC3000D2AE7 /* AuthenticationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2D9922B94ADC3000D2AE7 /* AuthenticationVC.swift */; };
+		FFA2D9952B94BEA6000D2AE7 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2D9942B94BEA6000D2AE7 /* RegisterVC.swift */; };
 		FFBA86B32B9356540015EB4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA86B22B9356540015EB4D /* AppDelegate.swift */; };
 		FFBA86B52B9356540015EB4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA86B42B9356540015EB4D /* SceneDelegate.swift */; };
 		FFBA86BA2B9356550015EB4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBA86B82B9356550015EB4D /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FFA2D9902B94ADAB000D2AE7 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		FFA2D9922B94ADC3000D2AE7 /* AuthenticationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationVC.swift; sourceTree = "<group>"; };
+		FFA2D9942B94BEA6000D2AE7 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		FFBA86AF2B9356540015EB4D /* helloworldinteraction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloworldinteraction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBA86B22B9356540015EB4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFBA86B42B9356540015EB4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,9 +47,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FFA2D9962B94BEE4000D2AE7 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				FFA2D9902B94ADAB000D2AE7 /* Authentication.storyboard */,
+				FFA2D9942B94BEA6000D2AE7 /* RegisterVC.swift */,
+				FFA2D9922B94ADC3000D2AE7 /* AuthenticationVC.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		FFBA86A62B9356540015EB4D = {
 			isa = PBXGroup;
 			children = (
+				FFA2D9962B94BEE4000D2AE7 /* Authentication */,
 				FFBA86B12B9356540015EB4D /* helloworldinteraction */,
 				FFBA86B02B9356540015EB4D /* Products */,
 			);
@@ -135,6 +152,7 @@
 				FFBA86BC2B9356570015EB4D /* Assets.xcassets in Resources */,
 				FFBA86BA2B9356550015EB4D /* Main.storyboard in Resources */,
 				FFBA86C92B9368860015EB4D /* EmojiTranslator.storyboard in Resources */,
+				FFA2D9912B94ADAB000D2AE7 /* Authentication.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +166,9 @@
 				FFBA86B32B9356540015EB4D /* AppDelegate.swift in Sources */,
 				FFBA86CB2B936A180015EB4D /* EmojiTranslatorVC.swift in Sources */,
 				FFBA86B52B9356540015EB4D /* SceneDelegate.swift in Sources */,
+				FFA2D9952B94BEA6000D2AE7 /* RegisterVC.swift in Sources */,
 				FFBA86C72B9357B90015EB4D /* SayHelloVC.swift in Sources */,
+				FFA2D9932B94ADC3000D2AE7 /* AuthenticationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

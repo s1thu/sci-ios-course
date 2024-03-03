@@ -20,6 +20,10 @@ class EmojiTranslatorVC: UIViewController {
         "🩷" : "Lov"
     ]
     
+    override func loadView() {
+        super.loadView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -39,6 +43,8 @@ class EmojiTranslatorVC: UIViewController {
         [btnOctopus,btnGhot,btnHaha,btnLov].compactMap{$0}.forEach {
             $0.addTarget(self, action: #selector(onTapEmoji(sender:)), for: .touchUpInside)
         }
+        
+        [btnOctopus,btnGhot,btnHaha,btnLov].addTarget(action: #selector(onTapEmoji(sender:)))
     }
     
     @objc func onTapEmoji(sender: UIButton){
@@ -71,6 +77,30 @@ class EmojiTranslatorVC: UIViewController {
 //                //
 //            }
 //            }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated) // viewWillAppear yk behaviours twy akone lone ko inherit lok chin lo ma hok yin ko br thr ko yay.
+        
+        //getLocation
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //API call => Server loading
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+    }
+    
+    deinit{
+        // screen kill
+        //chang screen
     }
 
 

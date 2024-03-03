@@ -19,8 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow.init(windowScene: scene)
-        let storyboard = UIStoryboard.init(name: "EmojiTranslator", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "EmojiTranslatorVC")
+        let storyboard = UIStoryboard.init(name: "Authentication", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AuthenticationVC")
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
     }
