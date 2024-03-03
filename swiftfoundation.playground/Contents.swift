@@ -410,3 +410,31 @@ print(resultArr)
 //    }
 //        
 //}
+
+extension Array where Element == Int {
+    func median() -> Double? {
+        
+        guard !self.isEmpty else {
+            return nil
+        }
+        
+        let sortedArr = self.sorted()
+        
+        if let sortedArr = sortedArr {
+            if sortedArr.count % 2 == 0 {
+                // if [1,2,3,4] 2+3 / 2
+                
+                return Double(sortedArr[Int(sortedArr.count/2)] + sortedArr[Int(sortedArr.count/2) + 1 ]) / 2.0
+                
+            }else{
+                return Double(sortedArr[Int(sortedArr.count/2) + 1])
+            }
+        }
+        
+        
+            
+    }
+}
+
+print([1,2,4].median())
+print([Int]().median())
