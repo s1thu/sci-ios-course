@@ -10,6 +10,13 @@ import UIKit
 class RegisterVC: UIViewController {
 
     @IBOutlet weak var btnDismiss:UIButton!
+    @IBOutlet weak var btnRegister:UIButton!
+    @IBOutlet weak var tfEmail:UITextField!
+    @IBOutlet weak var tfUser:UITextField!
+    @IBOutlet weak var segGender:UISegmentedControl!
+    @IBOutlet weak var tfDOB:UITextField!
+    @IBOutlet weak var tfPwd:UITextField!
+    @IBOutlet weak var tfConPwd:UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
