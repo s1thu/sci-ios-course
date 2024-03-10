@@ -78,7 +78,7 @@ class AuthenticationVC: UIViewController {
     }
 }
 
-extension Array where Element == UITextField{
+extension Array where Element == UITextField {
     func addTarget(action: Selector) {
         self.compactMap{$0}.forEach{$0.addTarget(self, action: action, for: .editingChanged)}
     }

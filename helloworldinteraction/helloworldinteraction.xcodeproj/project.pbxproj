@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF6105952B9DBEC900EEF654 /* RegisterSTWVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6105942B9DBEC900EEF654 /* RegisterSTWVC.swift */; };
 		FFA2D9912B94ADAB000D2AE7 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA2D9902B94ADAB000D2AE7 /* Authentication.storyboard */; };
 		FFA2D9932B94ADC3000D2AE7 /* AuthenticationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2D9922B94ADC3000D2AE7 /* AuthenticationVC.swift */; };
 		FFA2D9952B94BEA6000D2AE7 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2D9942B94BEA6000D2AE7 /* RegisterVC.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF6105942B9DBEC900EEF654 /* RegisterSTWVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSTWVC.swift; sourceTree = "<group>"; };
 		FFA2D9902B94ADAB000D2AE7 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		FFA2D9922B94ADC3000D2AE7 /* AuthenticationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationVC.swift; sourceTree = "<group>"; };
 		FFA2D9942B94BEA6000D2AE7 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 				FFA2D9902B94ADAB000D2AE7 /* Authentication.storyboard */,
 				FFA2D9942B94BEA6000D2AE7 /* RegisterVC.swift */,
 				FFA2D9922B94ADC3000D2AE7 /* AuthenticationVC.swift */,
+				FF6105942B9DBEC900EEF654 /* RegisterSTWVC.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				FFBA86CB2B936A180015EB4D /* EmojiTranslatorVC.swift in Sources */,
 				FFBA86B52B9356540015EB4D /* SceneDelegate.swift in Sources */,
 				FFA2D9952B94BEA6000D2AE7 /* RegisterVC.swift in Sources */,
+				FF6105952B9DBEC900EEF654 /* RegisterSTWVC.swift in Sources */,
 				FFBA86C72B9357B90015EB4D /* SayHelloVC.swift in Sources */,
 				FFA2D9932B94ADC3000D2AE7 /* AuthenticationVC.swift in Sources */,
 			);
