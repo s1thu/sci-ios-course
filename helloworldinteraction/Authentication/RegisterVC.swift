@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RegexBuilder
 
 class RegisterVC: UIViewController {
     
@@ -31,7 +32,8 @@ class RegisterVC: UIViewController {
     private var isRegistered:Bool = false{
         didSet{
             btnRegister.isEnabled = isRegistered
-            btnRegister.backgroundColor = isRegistered ? UIColor.systemIndigo : .lightGray
+            btnRegister.backgroundColor = isRegistered ? UIColor.systemIndigo : .formsecondary
+            
         }
     }
     
@@ -72,6 +74,21 @@ class RegisterVC: UIViewController {
         tfDOB.delegate = self
         
         
+        ///Create UIBUtton in input TOOLBar datepicker
+        let toolBar = UIToolbar()
+        toolBar.barStyle = .default
+        
+        // transparent
+        toolBar.isTranslucent = true
+        toolBar.sizeToFit()
+        
+        //UIbutton in toolbar
+        let doneBtn = UIBarButtonItem.init(title: "Done", style: .done, target: self, action: #selector(onTapDone))
+        toolBar.setItems([doneBtn], animated: true)
+        
+        tfDOB.inputAccessoryView = toolBar
+        
+        
     }
     
     private func setupBindings(){
@@ -84,6 +101,41 @@ class RegisterVC: UIViewController {
         segGender.addTarget(self, action: #selector(validateInput), for: .valueChanged)
         
         datePicker.addTarget(self, action: #selector(onDateChanged), for: .valueChanged)
+        
+        btnRegister.addTarget(self, action: #selector(onTapRegister), for: .touchUpInside)
+    }
+    
+    @objc func onTapRegister(){
+        
+        //Screen Navigation
+        let storyboard = UIStoryboard.init(name: "Home", bundle: nil) //bundel can problem in multimodule
+        let vc = storyboard.instantiateViewController(withIdentifier: "RootVC") as? RootVC
+        guard let vc = vc else { return  }
+//        vc.modalPresentationStyle = .fullScreen
+        
+        
+        //Sending Data
+//        vc.email = tfEmail.text
+//        vc.userName = tfUser.text
+//        vc.gender = genderArray[segGender.selectedSegmentIndex]
+//        vc.dob = tfDOB.text
+//        vc.pwd = tfPwd.text
+        
+        let userModel:UserModel = UserModel.init(email: tfEmail.text,userName: tfUser.text,
+                                                 gender: genderArray[segGender.selectedSegmentIndex],
+                                                 dob: tfDOB.text,
+                                                 pwd: tfPwd.text)
+        print(userModel.description)
+        vc.userModel = userModel
+        navigationController?.pushViewController(vc, animated: true)
+//        present(vc, animated: true)
+        
+    }
+    
+    @objc func onTapDone(){
+        
+        tfDOB.resignFirstResponder()
+        tfPwd.becomeFirstResponder()
     }
     
     @objc func onDateChanged(){
@@ -117,11 +169,21 @@ class RegisterVC: UIViewController {
         
         print(genderArray[segGender.selectedSegmentIndex])
         
-        if let email = tfEmail.text, let username = tfUser.text,
+      
+        
+//        let result = "pth@gmail.com".wholeMatch(of: regex)
+//        
+//        if result == nil {
+//            print("Validation Failed")
+//        }else{
+//            print("Validation Success")
+//        }
+        
+        if let username = tfUser.text,
            let dob = tfDOB.text, let pwd = tfPwd.text,
            let conpwd = tfConPwd.text,
-           !email.isEmpty && !username.isEmpty && !dob.isEmpty && !pwd.isEmpty && !conpwd.isEmpty
-            && isTermschecked && pwd == conpwd {
+            !username.isEmpty && !dob.isEmpty && !pwd.isEmpty && !conpwd.isEmpty
+            && isTermschecked && pwd == conpwd && tfEmail.text.isValid {
             isRegistered = true
         }else{
             isRegistered = false
