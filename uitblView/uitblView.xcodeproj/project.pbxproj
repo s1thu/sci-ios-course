@@ -17,6 +17,7 @@
 		FF3C21AF2BA7174F00998715 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF3C21AD2BA7174F00998715 /* BookCell.xib */; };
 		FF3C21B12BA7183700998715 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C21B02BA7183700998715 /* MainVC.swift */; };
 		FF3C21B32BA7499600998715 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C21B22BA7499600998715 /* Book.swift */; };
+		FF93E0882BAB3619006BDEDD /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93E0872BAB3619006BDEDD /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FF3C21AD2BA7174F00998715 /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
 		FF3C21B02BA7183700998715 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FF3C21B22BA7499600998715 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		FF93E0872BAB3619006BDEDD /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,9 @@
 		FF3C21842BA713C500998715 = {
 			isa = PBXGroup;
 			children = (
-				FF3C21B22BA7499600998715 /* Book.swift */,
+				FF93E08B2BAB366F006BDEDD /* Cell */,
+				FF93E08A2BAB365A006BDEDD /* ViewController */,
+				FF93E0892BAB364C006BDEDD /* Model */,
 				FF3C218F2BA713C500998715 /* uitblView */,
 				FF3C218E2BA713C500998715 /* Products */,
 			);
@@ -68,15 +72,38 @@
 				FF3C21902BA713C500998715 /* AppDelegate.swift */,
 				FF3C21922BA713C500998715 /* SceneDelegate.swift */,
 				FF3C21942BA713C500998715 /* ViewController.swift */,
-				FF3C21962BA713C500998715 /* Main.storyboard */,
 				FF3C21992BA713C600998715 /* Assets.xcassets */,
 				FF3C219B2BA713C600998715 /* LaunchScreen.storyboard */,
 				FF3C219E2BA713C600998715 /* Info.plist */,
-				FF3C21B02BA7183700998715 /* MainVC.swift */,
-				FF3C21AC2BA7174F00998715 /* BookCell.swift */,
-				FF3C21AD2BA7174F00998715 /* BookCell.xib */,
 			);
 			path = uitblView;
+			sourceTree = "<group>";
+		};
+		FF93E0892BAB364C006BDEDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF3C21B22BA7499600998715 /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF93E08A2BAB365A006BDEDD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FF3C21962BA713C500998715 /* Main.storyboard */,
+				FF3C21B02BA7183700998715 /* MainVC.swift */,
+				FF93E0872BAB3619006BDEDD /* DetailVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FF93E08B2BAB366F006BDEDD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FF3C21AD2BA7174F00998715 /* BookCell.xib */,
+				FF3C21AC2BA7174F00998715 /* BookCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +184,7 @@
 				FF3C21952BA713C500998715 /* ViewController.swift in Sources */,
 				FF3C21912BA713C500998715 /* AppDelegate.swift in Sources */,
 				FF3C21932BA713C500998715 /* SceneDelegate.swift in Sources */,
+				FF93E0882BAB3619006BDEDD /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

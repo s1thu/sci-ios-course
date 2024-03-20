@@ -35,7 +35,6 @@ class BookCell: UITableViewCell {
     
     func bindData(data:Book){
         lblBookTitle.text = data.bookName
-        
     }
     
 }

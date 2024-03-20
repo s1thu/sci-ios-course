@@ -57,7 +57,23 @@ extension MainVC: UITableViewDataSource{
 }
 
 extension MainVC : UITableViewDelegate{
+    // onlick on each cell
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+//        print(indexPath.row)
+//        let book = books[indexPath.row]
+//        print(book)
+        
+        let book = books[indexPath.row]
+        
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "DetailVC") as? DetailVC
+        guard let vc = vc else{return}
+        
+        vc.data = book
+        print(book)
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+        
+        
     }
 }
