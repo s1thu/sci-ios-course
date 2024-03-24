@@ -31,6 +31,12 @@ class DetailVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
+        
+    }
+
+    func setupBindings(){
+        backBtn.addTarget(self, action: #selector(onTapDismiss), for: .touchUpInside)
+        
         if let data = data{
            
             bookTitle.text = data.bookName;
@@ -65,13 +71,9 @@ class DetailVC: UIViewController {
             priceBtn.titleLabel?.text = String(format: "%f", data.bookPrice);
         }
     }
-
-    func setupBindings(){
-        backBtn.addTarget(self, action: #selector(onTapDismiss), for: .touchUpInside)
-    }
     
     @objc func onTapDismiss(){
         dismiss(animated: true)
     }
-
+    
 }

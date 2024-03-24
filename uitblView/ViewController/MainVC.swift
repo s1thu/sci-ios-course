@@ -20,6 +20,8 @@ class MainVC: UIViewController {
         // It is like register your ID.
         tbView.register(UINib(nibName: "BookCell", bundle: nil), forCellReuseIdentifier: "BookCell")
         
+        tbView.register(UINib(nibName: "RecommendedCell", bundle: nil), forCellReuseIdentifier: "RecommendedCell")
+        
         // Step 2 Link Data source
         tbView.dataSource = self
         
@@ -41,17 +43,32 @@ extension MainVC: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "BookCell", for:   indexPath) as? BookCell
-        guard let cell = cell else { return UITableViewCell() }
         
         let data = books[indexPath.row]
+        
+        if data.isRecommendedBook == true{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "RecommendedCell", for:   indexPath) as? RecommendedCell
+            guard let cell = cell else { return UITableViewCell() }
+//            cell.bindData(data: data)
+            return cell
+        }else
+        {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "BookCell", for:   indexPath) as? BookCell
+            guard let cell = cell else { return UITableViewCell() }
+            cell.bindData(data: data)
+            cell.delegate = self
+            return cell
+        }
+        
+        
+        
 //        let Book = Book(imgUrl: "", bookName: data.bookName, bookPrice: data.bookPrice)
-        cell.bindData(data: data)
+//        cell.bindData(data: data)
         
 //       using didSet
 //        cell.data = data
         
-        return cell
+//        return cell
     }
     
 }
@@ -76,4 +93,13 @@ extension MainVC : UITableViewDelegate{
         
         
     }
+}
+
+extension MainVC: BookCellDelegate{
+    func onTapBookmakr(data: Book) {
+        books.first{$0.id == data.id}?.isBookmark.toggle()
+        
+        tbView.reloadData()
+    }
+
 }

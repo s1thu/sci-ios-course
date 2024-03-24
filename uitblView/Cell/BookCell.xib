@@ -39,13 +39,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFU-k0-6rn">
+                                <rect key="frame" x="271.66666666666669" y="0.0" width="46.333333333333314" height="34.333333333333336"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="bookmark" catalog="system"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JAT-nv-RSl" firstAttribute="top" secondItem="Z7y-sP-uTH" secondAttribute="top" constant="10" id="2XE-oO-fD5"/>
                             <constraint firstAttribute="trailing" secondItem="JAT-nv-RSl" secondAttribute="trailing" constant="10" id="8md-0n-efQ"/>
                             <constraint firstAttribute="bottom" secondItem="gyN-ny-GNe" secondAttribute="bottom" id="Umq-1C-U2j"/>
+                            <constraint firstAttribute="trailing" secondItem="GFU-k0-6rn" secondAttribute="trailing" id="alM-Wr-8th"/>
                             <constraint firstItem="gyN-ny-GNe" firstAttribute="leading" secondItem="Z7y-sP-uTH" secondAttribute="leading" id="e9v-XP-Z39"/>
+                            <constraint firstItem="GFU-k0-6rn" firstAttribute="top" secondItem="Z7y-sP-uTH" secondAttribute="top" id="fZs-jP-UY2"/>
                             <constraint firstItem="JAT-nv-RSl" firstAttribute="leading" secondItem="gyN-ny-GNe" secondAttribute="trailing" id="gma-Xg-o7T"/>
                             <constraint firstItem="26l-0P-yoI" firstAttribute="trailing" secondItem="JAT-nv-RSl" secondAttribute="trailing" id="mej-0K-dN1"/>
                             <constraint firstItem="26l-0P-yoI" firstAttribute="leading" secondItem="JAT-nv-RSl" secondAttribute="leading" id="syZ-kx-VAC"/>
@@ -63,6 +70,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="btnRecommendbook" destination="GFU-k0-6rn" id="FlI-hK-leb"/>
                 <outlet property="lblBookTitle" destination="JAT-nv-RSl" id="TKz-aS-Ydm"/>
             </connections>
             <point key="canvasLocation" x="-555.72519083969462" y="-300.35211267605638"/>
@@ -70,6 +78,7 @@
     </objects>
     <resources>
         <image name="bookCover1" width="59.333332061767578" height="94.666664123535156"/>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
