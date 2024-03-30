@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF22C99E2BB3F9D300AAAAE9 /* RootNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF22C99D2BB3F9D300AAAAE9 /* RootNC.swift */; };
+		FF22C9A02BB3FAD300AAAAE9 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF22C99F2BB3FAD300AAAAE9 /* SigninVC.swift */; };
+		FFD158032BB4092F004094B8 /* SigninemailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD158022BB4092F004094B8 /* SigninemailVC.swift */; };
+		FFD158072BB40A51004094B8 /* UIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD158062BB40A51004094B8 /* UIVC.swift */; };
+		FFE7DB6E2BB1D037008CEC36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7DB6D2BB1D037008CEC36 /* AppDelegate.swift */; };
+		FFE7DB702BB1D037008CEC36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7DB6F2BB1D037008CEC36 /* SceneDelegate.swift */; };
+		FFE7DB752BB1D037008CEC36 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FFE7DB742BB1D037008CEC36 /* Base */; };
+		FFE7DB772BB1D039008CEC36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE7DB762BB1D039008CEC36 /* Assets.xcassets */; };
+		FFE7DB7A2BB1D039008CEC36 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FFE7DB792BB1D039008CEC36 /* Base */; };
+		FFED85A72BB5BAA500E669DC /* RegEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED85A62BB5BAA500E669DC /* RegEx.swift */; };
+		FFED85A92BB5BB5000E669DC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED85A82BB5BB5000E669DC /* String.swift */; };
+		FFED85AB2BB5BEEB00E669DC /* CreateAccVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED85AA2BB5BEEB00E669DC /* CreateAccVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FF22C99D2BB3F9D300AAAAE9 /* RootNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNC.swift; sourceTree = "<group>"; };
+		FF22C99F2BB3FAD300AAAAE9 /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
+		FFD158022BB4092F004094B8 /* SigninemailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninemailVC.swift; sourceTree = "<group>"; };
+		FFD158062BB40A51004094B8 /* UIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVC.swift; sourceTree = "<group>"; };
+		FFE7DB6A2BB1D037008CEC36 /* kayak-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kayak-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFE7DB6D2BB1D037008CEC36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFE7DB6F2BB1D037008CEC36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FFE7DB742BB1D037008CEC36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFE7DB762BB1D039008CEC36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFE7DB792BB1D039008CEC36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFE7DB7B2BB1D039008CEC36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFED85A62BB5BAA500E669DC /* RegEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegEx.swift; sourceTree = "<group>"; };
+		FFED85A82BB5BB5000E669DC /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		FFED85AA2BB5BEEB00E669DC /* CreateAccVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFE7DB672BB1D037008CEC36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF22C9992BB3F90B00AAAAE9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF22C99F2BB3FAD300AAAAE9 /* SigninVC.swift */,
+				FFD158022BB4092F004094B8 /* SigninemailVC.swift */,
+				FFED85AA2BB5BEEB00E669DC /* CreateAccVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FF22C99C2BB3F99200AAAAE9 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				FF22C99D2BB3F9D300AAAAE9 /* RootNC.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		FFD158042BB40A30004094B8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FFD158062BB40A51004094B8 /* UIVC.swift */,
+				FFED85A62BB5BAA500E669DC /* RegEx.swift */,
+				FFED85A82BB5BB5000E669DC /* String.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FFE7DB612BB1D037008CEC36 = {
+			isa = PBXGroup;
+			children = (
+				FFE7DB6C2BB1D037008CEC36 /* kayak-clone */,
+				FFE7DB6B2BB1D037008CEC36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFE7DB6B2BB1D037008CEC36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFE7DB6A2BB1D037008CEC36 /* kayak-clone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFE7DB6C2BB1D037008CEC36 /* kayak-clone */ = {
+			isa = PBXGroup;
+			children = (
+				FFD158042BB40A30004094B8 /* Extension */,
+				FF22C99C2BB3F99200AAAAE9 /* Navigation */,
+				FF22C9992BB3F90B00AAAAE9 /* Controllers */,
+				FFE7DB6D2BB1D037008CEC36 /* AppDelegate.swift */,
+				FFE7DB6F2BB1D037008CEC36 /* SceneDelegate.swift */,
+				FFE7DB732BB1D037008CEC36 /* Main.storyboard */,
+				FFE7DB762BB1D039008CEC36 /* Assets.xcassets */,
+				FFE7DB782BB1D039008CEC36 /* LaunchScreen.storyboard */,
+				FFE7DB7B2BB1D039008CEC36 /* Info.plist */,
+			);
+			path = "kayak-clone";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFE7DB692BB1D037008CEC36 /* kayak-clone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFE7DB7E2BB1D039008CEC36 /* Build configuration list for PBXNativeTarget "kayak-clone" */;
+			buildPhases = (
+				FFE7DB662BB1D037008CEC36 /* Sources */,
+				FFE7DB672BB1D037008CEC36 /* Frameworks */,
+				FFE7DB682BB1D037008CEC36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kayak-clone";
+			productName = "kayak-clone";
+			productReference = FFE7DB6A2BB1D037008CEC36 /* kayak-clone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFE7DB622BB1D037008CEC36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					FFE7DB692BB1D037008CEC36 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = FFE7DB652BB1D037008CEC36 /* Build configuration list for PBXProject "kayak-clone" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFE7DB612BB1D037008CEC36;
+			productRefGroup = FFE7DB6B2BB1D037008CEC36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFE7DB692BB1D037008CEC36 /* kayak-clone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFE7DB682BB1D037008CEC36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE7DB772BB1D039008CEC36 /* Assets.xcassets in Resources */,
+				FFE7DB7A2BB1D039008CEC36 /* Base in Resources */,
+				FFE7DB752BB1D037008CEC36 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFE7DB662BB1D037008CEC36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFED85AB2BB5BEEB00E669DC /* CreateAccVC.swift in Sources */,
+				FFD158072BB40A51004094B8 /* UIVC.swift in Sources */,
+				FFE7DB6E2BB1D037008CEC36 /* AppDelegate.swift in Sources */,
+				FF22C9A02BB3FAD300AAAAE9 /* SigninVC.swift in Sources */,
+				FFE7DB702BB1D037008CEC36 /* SceneDelegate.swift in Sources */,
+				FF22C99E2BB3F9D300AAAAE9 /* RootNC.swift in Sources */,
+				FFD158032BB4092F004094B8 /* SigninemailVC.swift in Sources */,
+				FFED85A92BB5BB5000E669DC /* String.swift in Sources */,
+				FFED85A72BB5BAA500E669DC /* RegEx.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFE7DB732BB1D037008CEC36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFE7DB742BB1D037008CEC36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFE7DB782BB1D039008CEC36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFE7DB792BB1D039008CEC36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFE7DB7C2BB1D039008CEC36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFE7DB7D2BB1D039008CEC36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFE7DB7F2BB1D039008CEC36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MMDZ72L5F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "kayak-clone/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.s1thu.kayak-clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFE7DB802BB1D039008CEC36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MMDZ72L5F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "kayak-clone/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.s1thu.kayak-clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFE7DB652BB1D037008CEC36 /* Build configuration list for PBXProject "kayak-clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE7DB7C2BB1D039008CEC36 /* Debug */,
+				FFE7DB7D2BB1D039008CEC36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFE7DB7E2BB1D039008CEC36 /* Build configuration list for PBXNativeTarget "kayak-clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE7DB7F2BB1D039008CEC36 /* Debug */,
+				FFE7DB802BB1D039008CEC36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFE7DB622BB1D037008CEC36 /* Project object */;
+}
