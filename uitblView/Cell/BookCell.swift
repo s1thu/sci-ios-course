@@ -45,8 +45,7 @@ class BookCell: UITableViewCell {
     func bindData(data:Book){
         self.data = data
         lblBookTitle.text = data.bookName
-        btnRecommendbook.setImage(data.isBookmark ? UIImage(named: "bookmark") : UIImage(named: "bookmark.fill"), for: .normal)
-
+        btnRecommendbook.setImage(.init(systemName: data.isBookmark ? "bookmark.fill" : "bookmark"), for: .normal)
 
     }
     

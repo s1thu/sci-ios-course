@@ -19,8 +19,11 @@ class DetailVC: UIViewController {
     @IBOutlet weak var starLbl:UILabel!
     @IBOutlet weak var backBtn:UIButton!
     @IBOutlet weak var priceBtn:UIButton!
-
-
+    
+    var bookID:Int?
+    
+    let datasource = BookStoreDataSource.shared
+    
     var data:Book? = nil;
 
     override func viewDidLoad() {

@@ -11,7 +11,11 @@ class MainVC: UIViewController {
     
     @IBOutlet weak var tbView:UITableView!
     
-    let books:[Book] = Book.getDummyBooks()
+//    let books:[Book] = Book.getDummyBooks()
+    
+    let datasource = BookStoreDataSource.shared
+    
+    var books:[Book] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +34,8 @@ class MainVC: UIViewController {
         tbView.delegate = self
         
         tbView.separatorStyle = .none
+        
+        books = datasource.getAll()
     }
 
 }
@@ -55,8 +61,9 @@ extension MainVC: UITableViewDataSource{
         {
             let cell = tableView.dequeueReusableCell(withIdentifier: "BookCell", for:   indexPath) as? BookCell
             guard let cell = cell else { return UITableViewCell() }
-            cell.bindData(data: data)
             cell.delegate = self
+            cell.bindData(data: data)
+            
             return cell
         }
         

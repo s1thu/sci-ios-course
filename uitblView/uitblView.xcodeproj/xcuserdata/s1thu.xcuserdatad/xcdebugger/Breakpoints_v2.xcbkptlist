@@ -14,8 +14,8 @@
             filePath = "ViewController/MainVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "onTapBookmakr(data:)"
             landmarkType = "7">
          </BreakpointContent>
