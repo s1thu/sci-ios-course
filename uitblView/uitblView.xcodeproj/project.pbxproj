@@ -19,9 +19,13 @@
 		FF3C21B32BA7499600998715 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C21B22BA7499600998715 /* Book.swift */; };
 		FF45F1942BB05B9200E237F0 /* RecommendedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF45F1932BB05B9200E237F0 /* RecommendedCell.xib */; };
 		FF45F1952BB05B9200E237F0 /* RecommendedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF45F1922BB05B9200E237F0 /* RecommendedCell.swift */; };
+<<<<<<< HEAD
 		FF93E0882BAB3619006BDEDD /* BookDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93E0872BAB3619006BDEDD /* BookDetailVC.swift */; };
 		FFB9398B2BB9947F004FEA6C /* BookListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9398A2BB9947F004FEA6C /* BookListVM.swift */; };
 		FFB9398D2BB99F71004FEA6C /* BookDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9398C2BB99F71004FEA6C /* BookDetailVM.swift */; };
+=======
+		FF93E0882BAB3619006BDEDD /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93E0872BAB3619006BDEDD /* DetailVC.swift */; };
+>>>>>>> refs/remotes/origin/main
 		FFE392B82BB84DF200A49F91 /* BookStoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE392B72BB84DF200A49F91 /* BookStoreDataSource.swift */; };
 		FFE392BB2BB8597400A49F91 /* BookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE392BA2BB8597400A49F91 /* BookRepository.swift */; };
 /* End PBXBuildFile section */
@@ -41,9 +45,13 @@
 		FF3C21B22BA7499600998715 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		FF45F1922BB05B9200E237F0 /* RecommendedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCell.swift; sourceTree = "<group>"; };
 		FF45F1932BB05B9200E237F0 /* RecommendedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendedCell.xib; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		FF93E0872BAB3619006BDEDD /* BookDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailVC.swift; sourceTree = "<group>"; };
 		FFB9398A2BB9947F004FEA6C /* BookListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListVM.swift; sourceTree = "<group>"; };
 		FFB9398C2BB99F71004FEA6C /* BookDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailVM.swift; sourceTree = "<group>"; };
+=======
+		FF93E0872BAB3619006BDEDD /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+>>>>>>> refs/remotes/origin/main
 		FFE392B72BB84DF200A49F91 /* BookStoreDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookStoreDataSource.swift; sourceTree = "<group>"; };
 		FFE392BA2BB8597400A49F91 /* BookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,10 +113,16 @@
 		FF93E08A2BAB365A006BDEDD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				FFB9398A2BB9947F004FEA6C /* BookListVM.swift */,
 				FF3C21B02BA7183700998715 /* BookListVC.swift */,
 				FF93E0872BAB3619006BDEDD /* BookDetailVC.swift */,
 				FFB9398C2BB99F71004FEA6C /* BookDetailVM.swift */,
+=======
+				FF3C21962BA713C500998715 /* Main.storyboard */,
+				FF3C21B02BA7183700998715 /* MainVC.swift */,
+				FF93E0872BAB3619006BDEDD /* DetailVC.swift */,
+>>>>>>> refs/remotes/origin/main
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -222,17 +236,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFE392B82BB84DF200A49F91 /* BookStoreDataSource.swift in Sources */,
+<<<<<<< HEAD
 				FFB9398B2BB9947F004FEA6C /* BookListVM.swift in Sources */,
 				FF3C21AE2BA7174F00998715 /* BookCell.swift in Sources */,
 				FFE392BB2BB8597400A49F91 /* BookRepository.swift in Sources */,
 				FF3C21B12BA7183700998715 /* BookListVC.swift in Sources */,
+=======
+				FF3C21AE2BA7174F00998715 /* BookCell.swift in Sources */,
+				FFE392BB2BB8597400A49F91 /* BookRepository.swift in Sources */,
+				FF3C21B12BA7183700998715 /* MainVC.swift in Sources */,
+>>>>>>> refs/remotes/origin/main
 				FF3C21B32BA7499600998715 /* Book.swift in Sources */,
 				FF45F1952BB05B9200E237F0 /* RecommendedCell.swift in Sources */,
 				FF3C21952BA713C500998715 /* ViewController.swift in Sources */,
 				FF3C21912BA713C500998715 /* AppDelegate.swift in Sources */,
 				FF3C21932BA713C500998715 /* SceneDelegate.swift in Sources */,
+<<<<<<< HEAD
 				FFB9398D2BB99F71004FEA6C /* BookDetailVM.swift in Sources */,
 				FF93E0882BAB3619006BDEDD /* BookDetailVC.swift in Sources */,
+=======
+				FF93E0882BAB3619006BDEDD /* DetailVC.swift in Sources */,
+>>>>>>> refs/remotes/origin/main
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

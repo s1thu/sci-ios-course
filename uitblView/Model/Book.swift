@@ -18,9 +18,15 @@ class Book{
     let isRecommendedBook:Bool
     
     // user can kali
+<<<<<<< HEAD
     var isBookmark:Bool
     
     internal init(id:Int,imgUrl: String, bookName: String, author: String, rating: Double, bookPrice: Double,isRecommendedBook:Bool = false,isBookmark:Bool = false) {
+=======
+    var isBookmark:Bool = false
+    
+    internal init(id:Int,imgUrl: String, bookName: String, author: String, rating: Double, bookPrice: Double,isRecommendedBook:Bool = false) {
+>>>>>>> refs/remotes/origin/main
         self.imgUrl = imgUrl
         self.bookName = bookName
         self.author = author
@@ -28,7 +34,10 @@ class Book{
         self.bookPrice = bookPrice
         self.isRecommendedBook = isRecommendedBook
         self.id = id
+<<<<<<< HEAD
         self.isBookmark = isBookmark
+=======
+>>>>>>> refs/remotes/origin/main
         
     }
    
