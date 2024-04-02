@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="166" id="KGk-i7-Jjw" customClass="OneCell" customModule="delegateprotocolpattern" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="444" height="166"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="444" height="166"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="si4-75-spp">
+                        <rect key="frame" x="5" y="5" width="434" height="156"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dc-1t-FJG">
+                                <rect key="frame" x="89" y="50" width="256" height="56"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Send Data to Parent Controller"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0dc-1t-FJG" firstAttribute="centerY" secondItem="si4-75-spp" secondAttribute="centerY" id="2VE-hh-Sni"/>
+                            <constraint firstItem="0dc-1t-FJG" firstAttribute="centerX" secondItem="si4-75-spp" secondAttribute="centerX" id="4e8-Gt-yGm"/>
+                            <constraint firstItem="0dc-1t-FJG" firstAttribute="top" secondItem="si4-75-spp" secondAttribute="top" constant="50" id="53g-yF-AaF"/>
+                            <constraint firstAttribute="bottom" secondItem="0dc-1t-FJG" secondAttribute="bottom" constant="50" id="Oby-2u-dQB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="si4-75-spp" secondAttribute="trailing" constant="5" id="adm-SL-n0d"/>
+                    <constraint firstItem="si4-75-spp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="dcE-ye-KI9"/>
+                    <constraint firstItem="si4-75-spp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="elx-DL-cW5"/>
+                    <constraint firstAttribute="bottom" secondItem="si4-75-spp" secondAttribute="bottom" constant="5" id="vap-Xc-Xvh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnDatatoParentCtrll" destination="0dc-1t-FJG" id="fl8-EN-g7j"/>
+            </connections>
+            <point key="canvasLocation" x="67.175572519083971" y="-25.35211267605634"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
