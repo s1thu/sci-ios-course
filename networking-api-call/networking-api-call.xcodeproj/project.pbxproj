@@ -13,6 +13,10 @@
 		FF413E5B2BDA994F0022A410 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FF413E5A2BDA994F0022A410 /* Base */; };
 		FF413E5D2BDA99510022A410 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF413E5C2BDA99510022A410 /* Assets.xcassets */; };
 		FF413E602BDA99510022A410 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FF413E5F2BDA99510022A410 /* Base */; };
+		FF413E682BDBE8770022A410 /* rick-morty-characters.json in Resources */ = {isa = PBXBuildFile; fileRef = FF413E672BDBE8770022A410 /* rick-morty-characters.json */; };
+		FF413E6A2BDBE9A20022A410 /* RickMortyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF413E692BDBE9A20022A410 /* RickMortyResponse.swift */; };
+		FF413E6C2BDBF1220022A410 /* Post.json in Resources */ = {isa = PBXBuildFile; fileRef = FF413E6B2BDBF1220022A410 /* Post.json */; };
+		FF413E6E2BDBF1370022A410 /* PostVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF413E6D2BDBF1370022A410 /* PostVO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		FF413E5C2BDA99510022A410 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF413E5F2BDA99510022A410 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF413E612BDA99510022A410 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF413E672BDBE8770022A410 /* rick-morty-characters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "rick-morty-characters.json"; sourceTree = "<group>"; };
+		FF413E692BDBE9A20022A410 /* RickMortyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyResponse.swift; sourceTree = "<group>"; };
+		FF413E6B2BDBF1220022A410 /* Post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Post.json; sourceTree = "<group>"; };
+		FF413E6D2BDBF1370022A410 /* PostVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 		FF413E472BDA994F0022A410 = {
 			isa = PBXGroup;
 			children = (
+				FF413E6D2BDBF1370022A410 /* PostVO.swift */,
 				FF413E522BDA994F0022A410 /* networking-api-call */,
 				FF413E512BDA994F0022A410 /* Products */,
 			);
@@ -63,6 +72,9 @@
 				FF413E5C2BDA99510022A410 /* Assets.xcassets */,
 				FF413E5E2BDA99510022A410 /* LaunchScreen.storyboard */,
 				FF413E612BDA99510022A410 /* Info.plist */,
+				FF413E672BDBE8770022A410 /* rick-morty-characters.json */,
+				FF413E692BDBE9A20022A410 /* RickMortyResponse.swift */,
+				FF413E6B2BDBF1220022A410 /* Post.json */,
 			);
 			path = "networking-api-call";
 			sourceTree = "<group>";
@@ -125,7 +137,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF413E682BDBE8770022A410 /* rick-morty-characters.json in Resources */,
 				FF413E5D2BDA99510022A410 /* Assets.xcassets in Resources */,
+				FF413E6C2BDBF1220022A410 /* Post.json in Resources */,
 				FF413E602BDA99510022A410 /* Base in Resources */,
 				FF413E5B2BDA994F0022A410 /* Base in Resources */,
 			);
@@ -141,6 +155,8 @@
 				FF413E582BDA994F0022A410 /* ViewController.swift in Sources */,
 				FF413E542BDA994F0022A410 /* AppDelegate.swift in Sources */,
 				FF413E562BDA994F0022A410 /* SceneDelegate.swift in Sources */,
+				FF413E6A2BDBE9A20022A410 /* RickMortyResponse.swift in Sources */,
+				FF413E6E2BDBF1370022A410 /* PostVO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
